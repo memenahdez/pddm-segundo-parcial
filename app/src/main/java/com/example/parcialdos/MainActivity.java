@@ -10,6 +10,8 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     Button btnWidgets;
+    Button btnAdvancedWidgets;
+    Button btnDrawer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,10 +19,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         btnWidgets = findViewById(R.id.btn_elements);
+        btnDrawer = findViewById(R.id.btn_drawer);
+
         btnWidgets.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this,WidgetsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnDrawer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,DrawerActivity.class);
                 startActivity(intent);
             }
         });

@@ -16,4 +16,18 @@
         android:layout_height="wrap_content"
         android:text="@string/btn_widgets"/>
 
+    <Button
+        android:id="@+id/btn_advanced"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Advanced widgets"/>
+
+    <Button
+        android:id="@+id/btn_drawer"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drawer layout"/>
+
   </LinearLayout>
